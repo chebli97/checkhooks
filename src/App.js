@@ -6,12 +6,26 @@ import Filter from './components/Filter'
 
 const App = (props) => {
 
-  
+const [state, setState] = useState({
+  Card:Card,
+  searchfield:''
+})
+
+  const onSearchChange = (event) => {
+    setState({ searchfield: event.target.value })
+   
+  }
+
+  const { searchfield } = state;
+  const filteredMovies = Card.filter(movie =>{
+    return movie.title.toLowerCase().includes(searchfield.toLowerCase());
+  })
+    
  
   return (
     <div className="App ">
-          <Filter  />
-          <MovieList  Card={Card} />
+          <Filter  searchChange={onSearchChange}/>
+          <MovieList  Card={filteredMovies } />
 
     </div>
   );

@@ -8,7 +8,7 @@ const Movies = (props) => {
             <h1 className="text">{props.title}</h1>
             <h1 className="rating">{props.rate}</h1>
             </div>               
-              <img style={{width: "400px",height:"400px"}} className ='hover-shadow-3 grow mw5' src={`./images/movie-${props.id}.jpg`} alt=''/>
+              <img style={{width: "400px",height:"400px"}} className ='hover-shadow-5 ba grow  mw5' src={`./images/movie-${props.id}.jpg`} alt=''/>
                 
             </div>
             

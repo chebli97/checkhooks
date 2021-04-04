@@ -63,8 +63,38 @@ export const Card = [
       img_src: "./images/movie-8.jpg",
       src: "./movies/",
       rate:"8,3"
+    },
+    {
+      id:9,
+      title: "Now You See Me",
+      artist: "",
+      img_src: "./images/movie-9.jpg",
+      src: "./movies/",
+      rate:"7,3"
+    },
+    {
+      id:10,
+      title: "Now You See Me 2",
+      artist: "",
+      img_src: "./images/movie-10.jpg",
+      src: "./movies/",
+      rate:"6,5"
+    },
+    {
+      id:11,
+      title: "Interstellar",
+      artist: "",
+      img_src: "./images/movie-11.jpg",
+      src: "./movies/",
+      rate:"8,6"
+    },
+    {
+      id:12,
+      title: "Get Out",
+      artist: "",
+      img_src: "./images/movie-12.jpg",
+      src: "./movies/",
+      rate:"7,7"
     }
-
-
 
   ];
