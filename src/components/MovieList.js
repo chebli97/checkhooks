@@ -1,12 +1,14 @@
 import React from 'react'
 import MovieCard from './MovieCard'
 
+
 const MovieList = ({Card}) => {
     return (
         <div>
             {
                 Card.map((user,i) => {
                     return(
+                         
                         <MovieCard
                         key={i}
                         id={Card[i].id}
@@ -15,7 +17,7 @@ const MovieList = ({Card}) => {
                         src={Card[i].src}
                         rate={Card[i].rate}
                         />
-
+                       
                     )
                 })
 

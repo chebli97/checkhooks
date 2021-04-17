@@ -3,6 +3,9 @@ import  {useState} from 'react'
 import MovieList from './components/MovieList'
 import {Card} from './components/Card'
 import Filter from './components/Filter'
+import { BrowserRouter as Router,Route } from "react-router-dom";
+import MovieOverview from './components/MovieOverview';
+
 
 const App = (props) => {
 
@@ -21,13 +24,23 @@ const [state, setState] = useState({
     return movie.title.toLowerCase().includes(searchfield.toLowerCase());
   })
     
- 
+  
   return (
     <div className="App ">
-          <Filter  searchChange={onSearchChange}/>
-          <MovieList  Card={filteredMovies } />
-
+      <Filter  searchChange={onSearchChange}/>
+          <Router>
+          
+                <Route path="/movieoverview/:id" render={({match}) => 
+                        <MovieOverview {...Card.find(item=>item.id == match.params.id)}/> 
+                      } />
+              
+                
+                <Route exact={true} path="/" children={<MovieList  Card={filteredMovies } />} />
+          
+          </Router>
+         
     </div>
+     
   );
 }
 

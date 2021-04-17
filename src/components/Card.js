@@ -70,7 +70,8 @@ export const Card = [
       artist: "",
       img_src: "./images/movie-9.jpg",
       src: "./movies/",
-      rate:"7,3"
+      rate:"7,3",
+      description:"The plot follows an FBI agent and an Interpol detective who track and attempt to bring to justice a team of magicians who pull off bank heists and robberies during their performances and reward their audiences with the money."
     },
     {
       id:10,
